@@ -1,0 +1,69 @@
+/* Home Container Styling */
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #fdfdfd;
+  text-align: center;
+}
+
+/* Image Styling */
+.homeContainer img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-top: 30px;
+  filter: brightness(80%);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header and Subheader Styling */
+.homeContainer h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #222;
+  font-weight: 700;
+}
+
+.homeContainer h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 10px 0 0;
+  color: #555;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+  .homeContainer h1 {
+    font-size: 2.5rem;
+  }
+
+  .homeContainer h2 {
+    font-size: 1.3rem;
+  }
+
+  .homeContainer img {
+    max-width: 90%;
+    margin-top: 20px;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .homeContainer h1 {
+    font-size: 2rem;
+  }
+
+  .homeContainer h2 {
+    font-size: 1.1rem;
+  }
+
+  .homeContainer img {
+    max-width: 100%;
+    margin-top: 15px;
+  }
+}
