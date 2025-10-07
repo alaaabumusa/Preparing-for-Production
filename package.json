@@ -4,11 +4,12 @@
   "description": "In this Project Students will optimize and test a front-end web application called Study Night, a flashcard tool. Using the skills gained throughout this course, they will create tests to ensure product quality, install and configure necessary project dependencies, and optimize and automate the application tasks.",
   "type": "module",
   "scripts": {
-    "start": "parcel starter/index.html",
-    "build": "parcel build starter/index.html",
-    "test": "mocha --extension js --no-warnings",
-    "gulp": "gulp"
-  },
+  "start": "parcel starter/index.html",
+  "build": "parcel build starter/index.html --public-url ./",
+  "test": "mocha --extension js --no-warnings",
+  "gulp": "gulp",
+  "cypress": "cypress run"
+},
   "keywords": [],
   "author": "",
   "license": "MIT",
@@ -22,6 +23,6 @@
     "gulp-shell": "^0.8.0",
     "jsdom": "^26.1.0",
     "mocha": "^11.2.2",
-    "parcel": "^2.14.4"
+    "parcel": "^2.16.0"
   }
 }

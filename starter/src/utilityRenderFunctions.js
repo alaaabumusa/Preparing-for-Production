@@ -18,10 +18,11 @@ const createElement = (elementType, text) => {
 // Creates images with alt
 const createImage = (url, alt) => {
   const img = document.createElement("img");
-  img.src = url;
-  img.alt = alt;
+  img.src = url?.default || url; 
   return img;
 };
+
+
 
 // Create a header element with specified text and data attribute
 const createHeader = (headerType, text, dataCy) => {
